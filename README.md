@@ -1,3 +1,7 @@
-# randGen
+# Random Number Generator (randGen)
+This is a tutorial project meant to help me learn web dev skills. 
 
-This is a tutorial project to learing NodeJS, Express and other associated practices.
+**Stack:**
+ - NodeJS
+ - Express
+ - React
