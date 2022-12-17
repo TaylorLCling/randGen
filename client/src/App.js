@@ -1,3 +1,9 @@
+/*
+This seems like a very simple App front page, getting the items togeather too present the front page too the user, creating a function
+and embedding hard-coded Html to display when the function is called.
+
+*/
+
 import logo from './logo.svg';
 import './App.css';
 
