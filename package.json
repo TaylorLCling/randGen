@@ -46,6 +46,7 @@
     "path-to-regexp": "^0.1.7",
     "proxy-addr": "^2.0.7",
     "qs": "^6.11.0",
+    "random-seed": "^0.3.0",
     "range-parser": "^1.2.1",
     "raw-body": "^2.5.1",
     "safe-buffer": "^5.2.1",
@@ -62,8 +63,8 @@
     "vary": "^1.1.2"
   },
   "scripts": {
-    "start": "node --watch server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/index.js",
+    "build": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -81,5 +82,8 @@
   "bugs": {
     "url": "https://github.com/TaylorLCling/randGen/issues"
   },
-  "homepage": "https://github.com/TaylorLCling/randGen#readme"
+  "homepage": "https://github.com/TaylorLCling/randGen#readme",
+  "engines": {
+    "node": "v18.12.1"
+  }
 }
