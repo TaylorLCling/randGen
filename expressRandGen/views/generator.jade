@@ -12,18 +12,21 @@ html(lang='en')
         h1 Random Number Generator (Integer)
       .card
         .card-body
-          form(method='post')
-            label(for='min') Minimum number:
+          form(id='inputs' method='post')
+            label(for='min' form='inputs') Minimum number:
             br
-            input#min(type='number' name='min' value='0')
+            input#min(type='number' name='min' value=min)
             br
-            label(for='max' selected='') Maximum number:
+            label(for='max' form='inputs') Maximum number:
             br
-            input#max(type='number' name='max' value='3')
+            input#max(type='number' name='max' value=max)
             br
             br
             input(type='submit' value='Submit')
             br
             br
         .card-footer
-          textarea#result(readonly='' aria-label='Generated Number')
+          textarea#message(readonly='true' aria-label='Status' title='Status') #{message}
+          br
+          br
+          textarea#result(readonly='true' aria-label='Generated Number' title='Generated Number') #{result}
