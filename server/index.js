@@ -25,13 +25,10 @@ appRand.get('/', (request, respond) => {
 })
 
 appRand.post('/', (request, respond) => {
-  console.log('There has been a POST request has been made:')
+  console.log('A POST request has been made:')
   console.log(request.query.min);
   console.log(request.query.max);
 })
-
-
-
 
 // Handle GET requests to /api route
 appRand.get("/api", (request, respond) => {
