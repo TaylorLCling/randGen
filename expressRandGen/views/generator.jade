@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title Random Number Generator
+    link(rel='stylesheet' href='style.css')
+  body
+    .wrapper
+      header
+        h1 Random Number Generator (Integer)
+      .card
+        .card-body
+          form(method='post')
+            label(for='min') Minimum number:
+            br
+            input#min(type='number' name='min' value='0')
+            br
+            label(for='max' selected='') Maximum number:
+            br
+            input#max(type='number' name='max' value='3')
+            br
+            br
+            input(type='submit' value='Submit')
+            br
+            br
+        .card-footer
+          textarea#result(readonly='' aria-label='Generated Number')
